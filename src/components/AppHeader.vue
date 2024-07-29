@@ -1,3 +1,53 @@
+<script>
+export default {
+    data() {
+        return {
+            liste: [
+                {
+                    label: 'CHATACTERS',
+                    current: false
+                },
+                {
+                    label: 'COMICS',
+                    current: true
+                },
+                {
+                    label: 'MOVIES',
+                    current: false
+                },
+                {
+                    label: 'TV',
+                    current: true
+                },
+                {
+                    label: 'GAMES',
+                    current: false
+                },
+                {
+                    label: 'COLLECTIBLES',
+                    current: true
+                },
+                {
+                    label: 'VIDEOS',
+                    current: false
+                },
+                {
+                    label: 'FANS',
+                    current: false
+                },
+                {
+                    label: 'NEWS',
+                    current: true
+                },
+                {
+                    label: 'SHOP',
+                    current: false
+                },
+            ]
+        }
+    },
+}
+</script>
 <template lang="">
     <header>
         <div class='container'>
@@ -9,16 +59,7 @@
                         </div>
                         <div class='navigazione'>
                             <ul class='d-flex list-unstyled'>
-                                <li>CHATACTERS</li>
-                                <li>COMICS</li>
-                                <li>MOVIES</li>
-                                <li>TV</li>
-                                <li>GAMES</li>
-                                <li>COLLECTIBLES</li>
-                                <li>VIDEOS</li>
-                                <li>FANS</li>
-                                <li>NEWS</li>
-                                <li>SHOP</li>
+                                <li v-for="lista, index in liste" :key="index">{{lista.label}}</li>
                             </ul>
                         </div>
                     </div>
@@ -27,18 +68,26 @@
         </div>
     </header>
 </template>
-<script>
-export default {
-    
-}
-</script>
+
 <style lang="scss">
     ul {
         li{
-            padding: 20px 20px;
+            padding: 30px 20px;
             font-size: 13px;
             font-weight: bold;
             color: rgb(133, 133, 133);
+    
+
+            &:hover {
+                color: #387cec;
+                border-bottom: 2px solid #387cec;
+                cursor: pointer;
+            }
         }
+    }
+
+    .active{
+        color: #387cec;
+        border-bottom: 2px solid #387cec;
     }
 </style>
