@@ -199,7 +199,7 @@ export default {
         ul{
             li{
                 font-size: 12px;
-                color: lightgrey;
+                color: rgb(131, 131, 131);
                 p{
                     color: white;
                     font-weight: bold;

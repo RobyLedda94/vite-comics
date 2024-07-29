@@ -61,7 +61,10 @@ export default {
         }
         ul{
             li{
-                padding: 0px 15px;
+                padding: 0px 10px;
+                img{
+                    width: 30px;
+                }
             }
         }
     }
