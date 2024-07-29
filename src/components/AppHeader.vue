@@ -69,7 +69,7 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     ul {
         li{
             padding: 30px 20px;
