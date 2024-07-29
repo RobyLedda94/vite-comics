@@ -17,7 +17,7 @@ export default {
                 },
                 {
                     label: 'TV',
-                    current: true
+                    current: false
                 },
                 {
                     label: 'GAMES',
@@ -25,7 +25,7 @@ export default {
                 },
                 {
                     label: 'COLLECTIBLES',
-                    current: true
+                    current: false
                 },
                 {
                     label: 'VIDEOS',
@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     label: 'NEWS',
-                    current: true
+                    current: false
                 },
                 {
                     label: 'SHOP',
@@ -59,7 +59,7 @@ export default {
                         </div>
                         <div class='navigazione'>
                             <ul class='d-flex list-unstyled'>
-                                <li v-for="lista, index in liste" :key="index">{{lista.label}}</li>
+                                <li v-for="lista, index in liste" :key="index" :class="lista.current ? 'active' : ''">{{lista.label}}</li>
                             </ul>
                         </div>
                     </div>
