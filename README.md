@@ -6,6 +6,9 @@
 4 - layout statico dell'header
  4.1 - importazione dinamica delle voci della lista (navigazione)
 5 - creazione componente main
+    5.1 layout statico del contenuto main
+6 - creazione componente footer
+    6.1 - layout statico del contenuto footer
 
 
 
