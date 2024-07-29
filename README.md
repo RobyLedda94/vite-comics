@@ -5,6 +5,7 @@
 3 - suddivisione del layout in 3 componenti header - main - footer
 4 - layout statico dell'header
  4.1 - importazione dinamica delle voci della lista (navigazione)
+5 - creazione componente main
 
 
 
