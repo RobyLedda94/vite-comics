@@ -53,8 +53,8 @@ export default {
             <div class='container'>
                 <div class='row'>
                     <div class='col-12'>
-                        <div class='content-main-bottom d-flex justify-content-between py-5'>
-                            <div class='left d-flex'>
+                        <div class='content-main-bottom d-flex justify-content-between'>
+                            <div class='left d-flex py-4'>
                                 <ul class='list-unstyled'>
                                     <li>
                                         <p>DC COMICS</p>
@@ -150,7 +150,7 @@ export default {
                                 </ul>
                             </div>
                             <div class='right'>
-                                <img src='../assets/img/dc-logo-bg.png' />
+                                <img class='logo-grande' src='../assets/img/dc-logo-bg.png' />
                             </div>
                         </div>
                     </div>
@@ -168,6 +168,8 @@ export default {
 
     .jumbo-blue{
         background-color: #387cec;
+        position: relative;
+        z-index: 1;
     }
 
     .content-main{
@@ -190,6 +192,7 @@ export default {
     }
     .immagine-sfondo{
         background-image: url('../assets/img/footer-bg.jpg');
+        background-size: cover;
     }
 
     .content-main-bottom{
@@ -202,6 +205,13 @@ export default {
                     font-weight: bold;
                 }
             }
+        }
+    }
+    .right{
+        .logo-grande{
+            width: 460px;
+            position: relative;
+            top: -70px
         }
     }
 </style>
