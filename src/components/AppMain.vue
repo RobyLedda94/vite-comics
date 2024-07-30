@@ -83,7 +83,8 @@ export default {
 
 <template lang="">
     <main>
-        <div class='jumbotron'>      
+        <div class='jumbotron'>
+            <button class='current btn btn-primary'>CURRENT SERIES</button>
         </div>
         <div class='jumbo-black py-5'>
             <div class='container'>
@@ -91,6 +92,9 @@ export default {
                     <div class='cards-container col-12 col-md-2' v-for="card, index in datacards" :key="index">
                         <img :src='card.thumb' :alt='card.series'>
                         <p> {{card.series}} </p>                                  
+                    </div>
+                    <div class='col-12 d-flex justify-content-center'>
+                        <button class='btn btn-primary'>LOAD MORE</button>
                     </div>
                 </div>
             </div>
@@ -244,6 +248,13 @@ export default {
         background-image: url('../assets/img/jumbotron.jpg');
         background-size: cover;
         height: 400px;
+        position: relative;
+        .current{
+            position: absolute;
+            bottom: -18px;
+            left: 258px;
+            font-weight: bold;
+        }
     }
     .jumbo-black{
         background-color: black;
@@ -255,7 +266,7 @@ export default {
             }
             img{
                 width: 100%;
-                height: 225px;
+                max-height: 225px;
                 object-fit: cover;
             }
         }
