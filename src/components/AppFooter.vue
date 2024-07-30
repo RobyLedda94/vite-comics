@@ -42,6 +42,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+    footer{
+        position: relative;
+    }
     .bg-darkgray{
         background-color: rgb(49, 49, 49);
     }

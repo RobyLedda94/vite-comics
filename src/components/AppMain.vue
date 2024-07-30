@@ -1,11 +1,18 @@
 <script>
 export default {
-    
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 
 <template lang="">
     <main>
+        <div class='jumbotron'>
+            
+        </div>
         <div class='jumbo-black'>
             <div class='container'>
                 <div class='row'>
@@ -39,9 +46,9 @@ export default {
                                     <img src='../assets/img/buy-comics-shop-locator.png' />
                                     <span>COMIC SHOP LOCATOR</span>                                   
                                 </li>
-                                <li class='d-flex'>
+                                <li class='d-flex align-items-center'>
                                     <img src='../assets/img/buy-dc-power-visa.svg' />
-                                    <span class='mt-1'>DC POWER VISA</span>
+                                    <span class='mb-1'>DC POWER VISA</span>
                                 </li>
                             </ul>                  
                         </div>
@@ -162,6 +169,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+    .jumbotron{
+        background-image: url('../assets/img/jumbotron.jpg');
+        background-size: cover;
+        height: 400px;
+    }
     .jumbo-black{
         background-color: black;
     }
@@ -180,12 +192,13 @@ export default {
             li{
                 padding: 0 19px;
                 margin: 0 10px;
+                img{
+                    width: 50px;
+ 
+                }
                 span{
                     margin-left: 10px;
                     font-size: 12px;
-                }
-                img{
-                    width: 50px;
                 }
             }
         }
@@ -196,6 +209,7 @@ export default {
     }
 
     .content-main-bottom{
+        height: 357px;
         ul{
             li{
                 font-size: 12px;
@@ -211,7 +225,7 @@ export default {
         .logo-grande{
             width: 460px;
             position: relative;
-            top: -70px
+            top: -46px
         }
     }
 </style>
