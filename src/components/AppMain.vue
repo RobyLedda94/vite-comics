@@ -83,15 +83,14 @@ export default {
 
 <template lang="">
     <main>
-        <div class='jumbotron'>
-            
+        <div class='jumbotron'>      
         </div>
         <div class='jumbo-black py-5'>
             <div class='container'>
                 <div class='row'>
                     <div class='cards-container col-12 col-md-2' v-for="card, index in datacards" :key="index">
                         <img :src='card.thumb' :alt='card.series'>
-                        {{card.series}}                                 
+                        <p> {{card.series}} </p>                                  
                     </div>
                 </div>
             </div>
@@ -249,9 +248,15 @@ export default {
     .jumbo-black{
         background-color: black;
         .cards-container{
-            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            p{
+                color: white;
+            }
             img{
                 width: 100%;
+                height: 225px;
+                object-fit: cover;
             }
         }
     }
