@@ -86,14 +86,12 @@ export default {
         <div class='jumbotron'>
             
         </div>
-        <div class='jumbo-black'>
+        <div class='jumbo-black py-5'>
             <div class='container'>
                 <div class='row'>
-                    <div class='content-main d-flex col-12 col-md-2'>
-                        <div class='cards-container' v-for="card, index in datacards" :key="index">
-                            <img :src='card.thumb'>
-                            {{card.series}}           
-                        </div>                     
+                    <div class='cards-container col-12 col-md-2' v-for="card, index in datacards" :key="index">
+                        <img :src='card.thumb' :alt='card.series'>
+                        {{card.series}}                                 
                     </div>
                 </div>
             </div>
@@ -251,6 +249,7 @@ export default {
     .jumbo-black{
         background-color: black;
         .cards-container{
+            color: white;
             img{
                 width: 100%;
             }
