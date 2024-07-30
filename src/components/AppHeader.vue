@@ -51,3 +51,5 @@ export default {
         border-bottom: 2px solid #387cec;
     }
 </style>
+
+<!-- props -->
