@@ -16,7 +16,22 @@ export default {
         <div class='jumbo-black'>
             <div class='container'>
                 <div class='row'>
-                    <div class='col-12'>
+                    <div class='col-12 col-md-2 d-flex'>
+                        <div class='content-main'>
+                            <h4>Content goes here</h4>
+                        </div>
+                        <div class='content-main'>
+                            <h4>Content goes here</h4>
+                        </div>
+                        <div class='content-main'>
+                            <h4>Content goes here</h4>
+                        </div>
+                        <div class='content-main'>
+                            <h4>Content goes here</h4>
+                        </div>
+                        <div class='content-main'>
+                            <h4>Content goes here</h4>
+                        </div>
                         <div class='content-main'>
                             <h4>Content goes here</h4>
                         </div>
@@ -185,6 +200,7 @@ export default {
     }
 
     .content-main{
+        margin: 0 20px;
         padding: 40px 0;
         color: white;
 
