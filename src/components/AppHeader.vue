@@ -1,49 +1,9 @@
 <script>
+import { headerMenu } from '../data/menu'
 export default {
     data() {
         return {
-            liste: [
-                {
-                    label: 'CHATACTERS',
-                    current: false
-                },
-                {
-                    label: 'COMICS',
-                    current: true
-                },
-                {
-                    label: 'MOVIES',
-                    current: false
-                },
-                {
-                    label: 'TV',
-                    current: false
-                },
-                {
-                    label: 'GAMES',
-                    current: false
-                },
-                {
-                    label: 'COLLECTIBLES',
-                    current: false
-                },
-                {
-                    label: 'VIDEOS',
-                    current: false
-                },
-                {
-                    label: 'FANS',
-                    current: false
-                },
-                {
-                    label: 'NEWS',
-                    current: false
-                },
-                {
-                    label: 'SHOP',
-                    current: false
-                },
-            ]
+            headerMenu
         }
     },
 }
@@ -59,7 +19,7 @@ export default {
                         </div>
                         <div class='navigazione'>
                             <ul class='d-flex list-unstyled'>
-                                <li v-for="lista, index in liste" :key="index" :class="lista.current ? 'active' : ''">{{lista.label}}</li>
+                                <li v-for="lista, index in headerMenu" :key="index" :class="lista.current ? 'active' : ''">{{lista.label}}</li>
                             </ul>
                         </div>
                     </div>

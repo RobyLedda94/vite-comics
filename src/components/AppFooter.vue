@@ -75,4 +75,3 @@ export default {
 </style>
 
 
-<img src='../assets/img/dc-logo.png' />
